@@ -1,0 +1,37 @@
+# Blocks J2ME yazi dosyasi (Turkce)
+# Lines starting with # are ignored. Format:  key=text
+# Keep the key (left of =) unchanged. Change only the text on the right.
+# Save this file as UTF-8. Use plain letters if your phone shows boxes.
+
+# --- Bottom bar buttons (keep them short!) ---
+btn.zoomout=-
+btn.zoomin=+
+btn.prev=<
+btn.next=>
+btn.put=Koy
+btn.del=Kir
+btn.help=?
+
+# --- Help screen: one line per key (help.1, help.2, ...). Empty text = blank line ---
+help.1=BLOCKS J2ME - YARDIM
+help.2=
+help.3=DOKUNMATIK:
+help.4=Bloga dokun: yanina koy
+help.5=Surukle: haritayi kaydir
+help.6=- + : uzaklas / yakinlas
+help.7=< > : blok sec
+help.8=Koy/Kir: mod degistir
+help.9=? : bu yardimi ac
+help.10=
+help.11=TUSLU TELEFON:
+help.12=Yon tuslari / 2 4 6 8:
+help.13=  haritayi kaydir
+help.14=5 veya OK: kirmizi
+help.15=  artidaki bloga koy/kir
+help.16=1: uzaklas  3: yakinlas
+help.17=7: onceki  9: sonraki blok
+help.18=*: Koy/Kir modu
+help.19=0: sonraki blok
+help.20=#: yardimi ac/kapat
+help.21=
+help.22=Devam: herhangi tus/dokun
