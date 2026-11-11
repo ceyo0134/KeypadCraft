@@ -2,7 +2,7 @@
 
 Touchscreen + keypad J2ME (MIDP 2.0 / CLDC 1.1) version. Source and compiled `Blocks.jar` are both here.
 
-- `BlocksCanvas.java`, `BlocksMIDlet.java` - source of version 1.0 (the 1.0.1 inventory screen is only in the jar for now; its source will be added)
+- `BlocksCanvas.java`, `BlocksMIDlet.java` - source of version 1.0.1, decompiled from the released jar (original files were lost; see header comment). The original 1.0 source is in git history / tag v1.0
 - `Blocks.jar` - compiled, ready to install (J2ME Loader, FreeJ2ME, KEmulator, real phones)
 - `textures/`, `lang.txt`, `lang_tr.txt` - resources (see `TEXTURES_HOWTO.txt`, `TEXT_HOWTO.txt`)
 - `build.sh`, `MANIFEST.MF` - rebuild
