@@ -410,7 +410,8 @@ addEventListener("resize",resize);
 function loadImg(name){
   return new Promise(function(res){
     var im=new Image();
-    im.onload=function(){res(im)};im.onerror=function(){res(null)};
+    im.onload=function(){ if(im.decode){im.decode().then(function(){res(im)},function(){res(im)});}else res(im); };
+    im.onerror=function(){res(null)};
     im.src="textures/"+name+".png";
   });
 }
@@ -419,7 +420,11 @@ var langFile=(qs==="tr")?"lang_tr.txt":"lang.txt";
 var langP=fetch(langFile).then(function(r){return r.ok?r.text():""}).catch(function(){return ""});
 Promise.all([Promise.all(TEX.map(loadImg)),langP]).then(function(r){
   src=r[0]; if(r[1])parseLang(r[1]);
-  applyLang(); generateNatural(); resize();
+  applyLang(); generateNatural(); inited=false; resize();
+  /* Android WebView: rebuild the scaled textures a few times after start (same as pressing + / -), so the very first view is already textured */
+  function rebuild(){ buildTiles(); repaint(); }
+  setTimeout(rebuild,250); setTimeout(rebuild,1000);
+  addEventListener("load",rebuild);
 });
 })();
 </script></body></html>
