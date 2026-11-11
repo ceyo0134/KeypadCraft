@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Blocks Web</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div id="stage">
+    <canvas id="view"></canvas>
+  </div>
+  <div id="bar">
+    <button id="zoomOut" aria-label="Zoom out">-</button>
+    <button id="zoomIn" aria-label="Zoom in">+</button>
+    <button id="prev" aria-label="Previous block">&lt;</button>
+    <button id="cur" aria-label="Inventory"><img id="curImg" alt=""></button>
+    <button id="next" aria-label="Next block">&gt;</button>
+    <button id="modeBtn"></button>
+    <button id="helpBtn" aria-label="Help">?</button>
+  </div>
+</div>
+<dialog id="invDlg"><div class="dh"><span id="invTitle"></span><button data-close aria-label="Close">x</button></div><div class="db"><div class="inv" id="invGrid"></div></div></dialog>
+<dialog id="helpDlg"><div class="dh"><span id="helpTitle"></span><button data-close aria-label="Close">x</button></div><div class="db help" id="helpBody"></div></dialog>
+<script src="textures.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

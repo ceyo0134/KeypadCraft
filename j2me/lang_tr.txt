@@ -12,6 +12,10 @@ btn.put=Koy
 btn.del=Kir
 btn.help=?
 
+# --- Envanter basligi ---
+inv.title=ENVANTER
+# Istege bagli blok adlari: block.2=Tas, block.3=Cim ... (yoksa dosya adi)
+
 # --- Help screen: one line per key (help.1, help.2, ...). Empty text = blank line ---
 help.1=BLOCKS J2ME - YARDIM
 help.2=
@@ -20,18 +24,23 @@ help.4=Bloga dokun: yanina koy
 help.5=Surukle: haritayi kaydir
 help.6=- + : uzaklas / yakinlas
 help.7=< > : blok sec
-help.8=Koy/Kir: mod degistir
-help.9=? : bu yardimi ac
-help.10=
-help.11=TUSLU TELEFON:
-help.12=Yon tuslari / 2 4 6 8:
-help.13=  haritayi kaydir
-help.14=5 veya OK: kirmizi
-help.15=  artidaki bloga koy/kir
-help.16=1: uzaklas  3: yakinlas
-help.17=7: onceki  9: sonraki blok
-help.18=*: Koy/Kir modu
-help.19=0: sonraki blok
-help.20=#: yardimi ac/kapat
-help.21=
-help.22=Devam: herhangi tus/dokun
+help.8=Ikon: envanteri ac
+help.9=Koy/Kir: mod degistir
+help.10=? : bu yardimi ac
+help.11=
+help.12=TUSLU TELEFON:
+help.13=Yon tuslari / 2 4 6 8:
+help.14=  haritayi kaydir
+help.15=5 veya OK: kirmizi
+help.16=  artidaki bloga koy/kir
+help.17=1: uzaklas  3: yakinlas
+help.18=7: onceki  9: sonraki blok
+help.19=0: envanteri ac
+help.20=  (yon tusu + 5 = sec)
+help.21=*: Koy/Kir modu
+help.22=#: yardimi ac/kapat
+help.23=
+help.24=Sari cerceve = en son
+help.25=  koydugun blok
+help.26=
+help.27=Devam: herhangi tus/dokun

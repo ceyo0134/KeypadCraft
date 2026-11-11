@@ -1,0 +1,35 @@
+/* Layout: full-screen isometric canvas, thin control bar at the bottom, dialogs on top. */
+:root{
+  --sky:#87ceeb; --bar:#202020; --bar-line:#8a8a8a; --ink:#ffffff; --ink-dim:#b9bcc2;
+  --panel:#26292e; --panel-line:#3d4248; --accent:#ffd400; --danger:#ff4a3d;
+  --font:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;overflow:hidden}
+body{background:var(--sky);color:var(--ink);font:14px/1.4 var(--font);-webkit-user-select:none;user-select:none;touch-action:none}
+#app{display:flex;flex-direction:column;height:100%}
+#stage{position:relative;flex:1;min-height:0;overflow:hidden;background:var(--sky)}
+#view{position:absolute;left:0;top:0;image-rendering:pixelated;image-rendering:crisp-edges;touch-action:none;cursor:crosshair}
+#bar{display:grid;grid-template-columns:repeat(7,1fr);gap:0;background:var(--bar);padding:0 env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);height:calc(52px + env(safe-area-inset-bottom,0px))}
+button{font:inherit;color:var(--ink);background:var(--bar);border:1px solid var(--bar-line);margin:3px 1px;cursor:pointer;display:flex;align-items:center;justify-content:center;min-width:0;padding:0 4px}
+button:hover{background:#34383d}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+#bar button{font-size:18px;font-weight:700}
+#bar img{height:36px;image-rendering:pixelated}
+#modeBtn.del{color:var(--danger);border-color:var(--danger)}
+dialog{border:1px solid var(--panel-line);background:var(--panel);color:var(--ink);padding:0;max-width:min(560px,calc(100vw - 32px));width:100%;max-height:calc(100% - 32px);font:inherit;-webkit-user-select:text;user-select:text}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+dialog[open]{display:flex;flex-direction:column}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--panel-line);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
+.dh button{margin:0;width:32px;height:32px}
+.db{padding:14px;overflow:auto}
+.inv{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:8px}
+.inv button{flex-direction:column;height:92px;margin:0;gap:4px;font-size:11px;text-align:center;line-height:1.15}
+.inv button img{width:48px;image-rendering:pixelated}
+.inv button[aria-pressed=true]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.help h3{margin:14px 0 4px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.help h3:first-child{margin-top:0}
+.help ul{margin:0;padding-left:18px;color:var(--ink-dim)}
+.help li{margin:2px 0}
+.help kbd{font:inherit;border:1px solid var(--bar-line);padding:0 4px;color:var(--ink)}

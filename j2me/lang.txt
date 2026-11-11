@@ -12,6 +12,10 @@ btn.put=Put
 btn.del=Del
 btn.help=?
 
+# --- Inventory screen title ---
+inv.title=INVENTORY
+# Optional block names: block.2=Stone, block.3=Grass ... (default = file name)
+
 # --- Help screen: one line per key (help.1, help.2, ...). Empty text = blank line ---
 help.1=BLOCKS J2ME - HELP
 help.2=
@@ -21,18 +25,23 @@ help.5=  to it
 help.6=Drag: move the map
 help.7=- + : zoom out / in
 help.8=< > : change block
-help.9=Put/Del: switch mode
-help.10=? : open this help
-help.11=
-help.12=KEYPAD PHONE:
-help.13=D-pad / 2 4 6 8:
-help.14=  move the map
-help.15=5 or OK: place/remove
-help.16=  at the red crosshair
-help.17=1: zoom out  3: zoom in
-help.18=7: prev  9: next block
-help.19=*: Put/Del mode
-help.20=0: next block
-help.21=#: open/close help
-help.22=
-help.23=Next: press any key/tap
+help.9=Icon: open inventory
+help.10=Put/Del: switch mode
+help.11=? : open this help
+help.12=
+help.13=KEYPAD PHONE:
+help.14=D-pad / 2 4 6 8:
+help.15=  move the map
+help.16=5 or OK: place/remove
+help.17=  at the red crosshair
+help.18=1: zoom out  3: zoom in
+help.19=7: prev  9: next block
+help.20=0: open inventory
+help.21=  (D-pad + 5 = pick)
+help.22=*: Put/Del mode
+help.23=#: open/close help
+help.24=
+help.25=Yellow frame = last block
+help.26=  you placed
+help.27=
+help.28=Next: press any key/tap
