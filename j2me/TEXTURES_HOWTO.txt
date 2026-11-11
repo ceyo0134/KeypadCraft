@@ -1,0 +1,20 @@
+HOW TO CHANGE THE BLOCK PICTURES (no coding needed)
+
+1) The block pictures are in the "textures" folder. Each file is named after its block:
+   water, stone, grass, dirt, cobblestone, planks, bricks, slabs, wood, leaves, sand,
+   bookshelf, tnt, crafting_table, furnace, jukebox, sponge, gravel, moss, coal_ore,
+   iron_ore, bedrock, iron_block, gold_block  (all ".png")
+
+2) Edit them with any image editor that SAVES PNG WITH TRANSPARENCY
+   (Photopea, Pixel Studio, Aseprite, GIMP...). Keep the same file name.
+   Recommended size: 32 x 31 pixels. The empty corners must stay transparent.
+   Note: many video editors (including CapCut) export JPG or flatten transparency,
+   which would put a solid box around the block.
+
+3) Put the new pictures into the game:
+   - Copy Blocks.jar and rename the copy to Blocks.zip
+   - Open it with a ZIP app (WinRAR, 7-Zip, ZArchiver on Android)
+   - Open the "textures" folder inside and replace the files with yours
+   - Rename Blocks.zip back to Blocks.jar
+
+If a picture is missing, that block is drawn as a plain color instead.

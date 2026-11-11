@@ -1,0 +1,23 @@
+COPYRIGHT AND USAGE NOTICE
+
+Copyright (c) 2026 Ceyo (Snapchat: ceyo0134)
+
+This notice covers the J2ME (Java) port and the web version code written by Ceyo.
+The original game logic comes from Blocks-TI-84 by TheScienceElf
+(MIT License, Copyright (c) 2023 The Science Elf) and stays under that license.
+
+TEXTURES / CREDITS
+The block textures are based on the original Minecraft textures.
+Minecraft is a trademark of Mojang AB / Microsoft. The textures belong to
+Mojang Studios, not to Ceyo and not to TheScienceElf.
+This is an unofficial fan project. It is not affiliated with or endorsed by
+Mojang, Microsoft or Texas Instruments.
+
+You may use this code and publish it for fun / entertainment purposes.
+When you publish something made with it, you must give clear credit to Ceyo (ceyo0134),
+to the original author TheScienceElf, and to Minecraft / Mojang for the textures.
+
+If you change the game or use my code in your own project, you must give credit again.
+
+You can also message me on Snapchat (ceyo0134) to ask for permission,
+or send me the projects you made with it.

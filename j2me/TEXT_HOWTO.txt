@@ -1,0 +1,20 @@
+HOW TO CHANGE THE TEXT IN THE GAME (no coding needed)
+
+All on-screen text (bottom bar buttons and the help screen) is in the file "lang.txt".
+(A ready Turkish version is included: lang_tr.txt)
+
+1) Open lang.txt in any text editor (Notepad, phone text editor...).
+   Each line looks like:   key=text
+   Change only the text AFTER the "=". Do not change the key on the left.
+2) Help screen: help.1, help.2, help.3 ... are the lines in order. Add or remove lines freely
+   (keep the numbers in order with no gaps). "help.5=" with nothing after it makes a blank line.
+   Keep lines short (about 25 characters) so they fit small screens.
+3) Put it in the game:
+   - Copy Blocks.jar and rename the copy to Blocks.zip
+   - Open it with a ZIP app (WinRAR, 7-Zip, ZArchiver)
+   - Replace "lang.txt" in the root with yours
+     (to use Turkish: rename lang_tr.txt to lang.txt first)
+   - Rename Blocks.zip back to Blocks.jar
+
+Tips: save as UTF-8. Some phones can not show special letters (like s, g, i with marks);
+use plain letters if you see empty boxes. If lang.txt is missing, English text is used.
