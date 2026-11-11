@@ -199,6 +199,8 @@ public class BlocksCanvas extends Canvas implements CommandListener {
     static final String[] TEX = { "water", "stone", "grass", "dirt", "cobblestone", "planks", "bricks", "slabs",
         "wood", "leaves", "sand", "bookshelf", "tnt", "crafting_table", "furnace", "jukebox", "sponge", "gravel",
         "moss", "coal_ore", "iron_ore", "bedrock", "iron_block", "gold_block" };
+    Image icon;                                // arac cubugundaki secili blok dokusu
+    int iconFor = -1, iconW = 0;
     Image[] tiles;                             // yakinlastirmaya gore olceklenmis bloklar
     int ox, oy;                                // kaydirma
     boolean inited, removeMode, keyMode, help = true;
@@ -297,8 +299,23 @@ public class BlocksCanvas extends Canvas implements CommandListener {
             g.drawRect(i * cw + 1, h - BAR + 1, cw - 2, BAR - 2);
             if (lab[i].length() > 0) g.drawString(lab[i], i * cw + cw / 2, ty, Graphics.TOP | Graphics.HCENTER);
         }
-        g.setColor(COLOR[cur]);
-        g.fillRect(3 * cw + cw / 2 - 7, h - BAR + (BAR - 14) / 2, 14, 14);
+        if (src[cur - 1] != null) {
+            int iw = cw - 4 < 24 ? cw - 4 : 24, ih = iw * 31 / 32;
+            if (icon == null || iconFor != cur || iconW != iw) {   // secili blogun dokusu (en yakin komsu olcek)
+                Image im = src[cur - 1];
+                int sw = im.getWidth(), sh = im.getHeight();
+                int[] sp = new int[sw * sh], dp = new int[iw * ih];
+                im.getRGB(sp, 0, sw, 0, 0, sw, sh);
+                for (int y = 0; y < ih; y++)
+                    for (int x = 0; x < iw; x++) dp[y * iw + x] = sp[(y * sh / ih) * sw + x * sw / iw];
+                icon = Image.createRGBImage(dp, iw, ih, true);
+                iconFor = cur; iconW = iw;
+            }
+            g.drawImage(icon, 3 * cw + cw / 2 - iw / 2, h - BAR + (BAR - ih) / 2, Graphics.TOP | Graphics.LEFT);
+        } else {
+            g.setColor(COLOR[cur]);
+            g.fillRect(3 * cw + cw / 2 - 7, h - BAR + (BAR - 14) / 2, 14, 14);
+        }
         if (help) paintHelp(g, w, h);
     }
 

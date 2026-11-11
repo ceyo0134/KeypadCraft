@@ -243,8 +243,14 @@ function paint(){
     drawRect(i*cw+1,h-BAR+1,cw-2,BAR-2);
     if(lab[i].length>0)drawString(lab[i],i*cw+Math.floor(cw/2),ty,true);
   }
-  setColor(COLOR[cur]);
-  fillRect(3*cw+Math.floor(cw/2)-7,h-BAR+Math.floor((BAR-14)/2),14,14);
+  var im=src[cur-1];
+  if(im){
+    var iw=Math.min(24,cw-4), ih=Math.floor(iw*31/32);
+    g.drawImage(im,3*cw+Math.floor(cw/2)-Math.floor(iw/2),h-BAR+Math.floor((BAR-ih)/2),iw,ih);
+  }else{
+    setColor(COLOR[cur]);
+    fillRect(3*cw+Math.floor(cw/2)-7,h-BAR+Math.floor((BAR-14)/2),14,14);
+  }
   if(help)paintHelp(g,w,h);
 }
 function perPage(){var per=Math.floor((getHeight()-12)/13); return per<4?4:per}
