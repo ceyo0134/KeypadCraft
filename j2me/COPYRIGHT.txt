@@ -4,6 +4,8 @@ Copyright (c) 2026 Ceyo (Snapchat: ceyo0134)
 
 This notice covers the Java (J2ME) game and its source code written by Ceyo
 (BlocksCanvas.java, BlocksMIDlet.java and the compiled Blocks.jar).
+The Android app (KeypadCraft.apk) and its source code in the android/ folder are covered
+by this notice too, with exactly the same terms as the jar version.
 The browser version in this repository is only a test copy of the jar.
 
 The original game logic comes from Blocks-TI-84 by TheScienceElf
@@ -16,11 +18,12 @@ Mojang Studios, not to Ceyo and not to TheScienceElf.
 This is an unofficial fan project. It is not affiliated with or endorsed by
 Mojang, Microsoft or Texas Instruments.
 
-You may use this game and its code and publish it for fun / entertainment purposes.
+You may use this game and its code (the jar and the APK version alike) and publish it for fun / entertainment purposes.
 When you publish something made with it, you must give clear credit to Ceyo (ceyo0134),
 to the original author TheScienceElf, and to Minecraft / Mojang for the textures.
 
-If you change the game or use my code in your own project, you must give credit again.
+If you change the game (jar or APK) or use my code in your own project, you must give credit again.
+The same rules apply to the APK version as to the jar version.
 
 You can also message me on Snapchat (ceyo0134) to ask for permission,
 or send me the projects you made with it.
