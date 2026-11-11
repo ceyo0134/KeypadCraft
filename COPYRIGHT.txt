@@ -2,7 +2,10 @@ COPYRIGHT AND USAGE NOTICE
 
 Copyright (c) 2026 Ceyo (Snapchat: ceyo0134)
 
-This notice covers the J2ME (Java) port and the web version code written by Ceyo.
+This notice covers the Java (J2ME) game and its source code written by Ceyo
+(BlocksCanvas.java, BlocksMIDlet.java and the compiled Blocks.jar).
+The browser version in this repository is only a test copy of the jar.
+
 The original game logic comes from Blocks-TI-84 by TheScienceElf
 (MIT License, Copyright (c) 2023 The Science Elf) and stays under that license.
 
@@ -13,7 +16,7 @@ Mojang Studios, not to Ceyo and not to TheScienceElf.
 This is an unofficial fan project. It is not affiliated with or endorsed by
 Mojang, Microsoft or Texas Instruments.
 
-You may use this code and publish it for fun / entertainment purposes.
+You may use this game and its code and publish it for fun / entertainment purposes.
 When you publish something made with it, you must give clear credit to Ceyo (ceyo0134),
 to the original author TheScienceElf, and to Minecraft / Mojang for the textures.
 
